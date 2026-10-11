@@ -18,14 +18,6 @@
       }
     ]
   },
-  "routing_reference": {
-    "repository": "radxa-pkg/radxa-overlays",
-    "commit": "58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077",
-    "path": "arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam2-radxa-camera-8m-219.dtso",
-    "url": "https://raw.githubusercontent.com/radxa-pkg/radxa-overlays/58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077/arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam2-radxa-camera-8m-219.dtso",
-    "sha256": "693f2f9bd7db961a590140735fc7e98c1d9dfb1b4544aceca648ef203f1cb582",
-    "license": "BSD-3-Clause"
-  },
   "local_files": [
     {
       "path": "demo/ar0234-demo.cpp",
@@ -33,9 +25,48 @@
       "license": "MIT"
     },
     {
-      "path": "overlay/ar0234-cam2.dts",
-      "sha256": "192cc20fe264cb7cc245ff3cfd103ac06fb52b9c60d200c8ed203c1795e40932",
+      "path": "overlay/ar0234-cam1.dts",
+      "sha256": "02e76e773f48d854e372ae276d0887cd69233803f6496dc8a2038c66aac4f9cf",
       "license": "GPL-2.0-only"
+    },
+    {
+      "path": "overlay/ar0234-cam2.dts",
+      "sha256": "d3be8e287c6ca1dc9b7f987d1e793cdda859f5ef612edc7db78ae8168f340256",
+      "license": "GPL-2.0-only"
+    },
+    {
+      "path": "overlay/ar0234-cam3.dts",
+      "sha256": "2287aa4be284085f3e7771d46b671ebcc17cc6ceef6e917e5428d3c0614c0e78",
+      "license": "GPL-2.0-only"
+    }
+  ],
+  "routing_references": [
+    {
+      "camera_port": "CAM1",
+      "repository": "radxa-pkg/radxa-overlays",
+      "commit": "58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077",
+      "path": "arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam1-radxa-camera-13m-214.dtso",
+      "url": "https://raw.githubusercontent.com/radxa-pkg/radxa-overlays/58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077/arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam1-radxa-camera-13m-214.dtso",
+      "sha256": "dd3386ffd3c725dfe3a90eb3fbd74e464ad43b3847af01421f29e22b4145ecc1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "repository": "radxa-pkg/radxa-overlays",
+      "commit": "58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077",
+      "path": "arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam2-radxa-camera-8m-219.dtso",
+      "url": "https://raw.githubusercontent.com/radxa-pkg/radxa-overlays/58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077/arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam2-radxa-camera-8m-219.dtso",
+      "sha256": "693f2f9bd7db961a590140735fc7e98c1d9dfb1b4544aceca648ef203f1cb582",
+      "license": "BSD-3-Clause",
+      "camera_port": "CAM2"
+    },
+    {
+      "camera_port": "CAM3",
+      "repository": "radxa-pkg/radxa-overlays",
+      "commit": "58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077",
+      "path": "arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam3-radxa-camera-8m-219.dtso",
+      "url": "https://raw.githubusercontent.com/radxa-pkg/radxa-overlays/58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077/arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam3-radxa-camera-8m-219.dtso",
+      "sha256": "77e8b76336e87052f40238e6588c91c2476cc04fbbc1ee9f28a723dfd56feb67",
+      "license": "BSD-3-Clause"
     }
   ]
 }

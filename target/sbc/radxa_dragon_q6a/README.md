@@ -27,8 +27,8 @@ sh tools/preview.sh
 | --- | --- | --- |
 | Заказанный AR0234 MIPI | Цветной сенсор, ID `0x0a56`, выбранный объектив 200° | Захват работает; маркировка DECXIN-3478V1 относится к материалам продавца |
 | Q6A J16 / CAM2 | 15 контактов, 1 мм; две линии | Проверен маршрут `cci1_i2c0` → CSIPHY2, адрес `0x10` |
-| Q6A J14 / CAM1 | 31 контакт, 0,3 мм; четыре линии | Не проверен с этой камерой |
-| Q6A J7 / CAM3 | 15 контактов, 1 мм; две линии | Не проверен с этой камерой |
+| Q6A J14 / CAM1 | 31 контакт, 0,3 мм; четыре линии | Подготовлен двухлинейный overlay `cci0_i2c0` → CSIPHY0; физический захват не проверен |
+| Q6A J7 / CAM3 | 15 контактов, 1 мм; две линии | Подготовлен overlay `cci1_i2c1` → CSIPHY3; физический захват не проверен |
 
 По [Radxa CSI](https://docs.radxa.com/en/dragon/q6a/hardware-use/mipi-csi)
 J16/J7 имеют распиновку Raspberry Pi. Модуль из документов имеет собственный
@@ -39,16 +39,38 @@ J16/J7 имеют распиновку Raspberry Pi. Модуль из доку�
 [аппаратный справочник платы](https://github.com/pOmelchenko/radxa_dragon_q6a/blob/main/docs/reference/hardware.md#камерные-разъёмы).
 Уровни и временной контракт J2 TRG/STRB ещё не проверены.
 
+## Оверлеи CAM1, CAM2 и CAM3
+
+| Файл | Название в меню | CCI / CSIPHY | Включение питания |
+| --- | --- | --- | --- |
+| [ar0234-cam1.dts](overlay/ar0234-cam1.dts) | Enable AR0234 camera on CAM1 | `cci0_i2c0` / 0 | GPIO36 (`CAM0_POWER_EN`) |
+| [ar0234-cam2.dts](overlay/ar0234-cam2.dts) | Enable AR0234 camera on CAM2 | `cci1_i2c0` / 2 | GPIO77 |
+| [ar0234-cam3.dts](overlay/ar0234-cam3.dts) | Enable AR0234 camera on CAM3 | `cci1_i2c1` / 3 | GPIO78 |
+
+`make overlay` собирает все три `.dtbo`. `make overlay-check` проверяет
+каждый отдельно, все пары и три камеры во всех порядках применения.
+Названия узлов, clocks, regulators и endpoints различаются; одинаковый
+адрес сенсора `0x10` находится на разных I2C-шинах. Общий CMA остаётся
+одним пулом 128 МиБ. Все три overlay задают две линии RAW10 и локальный
+генератор 24 МГц; CAM1 использует первые две линии четырёхлинейного разъёма.
+
+Захват подтверждён на CAM2. Проверка скомпонованного DT не подтверждает
+одновременный поток трёх камер: нужны сами модули, проверенные переходники
+и измерение нагрузки ISP/CPU, памяти и частоты. Демка сейчас выбирает
+одну AR0234; интерфейс выбора камеры и просмотр трёх потоков ещё не добавлены.
+
 ## Код и результаты
 
 | Файл/каталог | Содержимое |
 | --- | --- |
 | [sources.json](sources.json) | Коммиты, лицензии и SHA-256 источников |
 | [tools/fetch-driver.py](tools/fetch-driver.py) | Получение закреплённого драйвера Kurokesu без изменения его исходника |
-| [overlay/ar0234-cam2.dts](overlay/ar0234-cam2.dts) | AR0234 → CAM2, 24 МГц local clock, GPIO77, CMA 128 МиБ |
+| [overlay/](overlay) | Отдельные AR0234 overlay для CAM1, CAM2 и CAM3 |
 | [demo/ar0234-demo.cpp](demo/ar0234-demo.cpp) | libcamera + SDL2 + OpenGL ES, коррекция выбросов и шума теней |
 | [Makefile](Makefile) | `driver`, `overlay`, `overlay-check`, `demo`, `check` |
+| [tools/check-overlays.py](tools/check-overlays.py) | Проверка 15 порядков применения и целостности трёх маршрутов |
 | [validation/2026-10-11.json](validation/2026-10-11.json) | Конфигурация, частоты, пропуски, тесты и хеши локальных артефактов |
+| [validation/overlays-2026-10-11.json](validation/overlays-2026-10-11.json) | Сборка отдельных overlay и проверка всех их сочетаний |
 | [validation/observations.md](validation/observations.md) | Шум, точки, круги и полосы около ламп; границы диагноза |
 
 Драйвер и overlay имеют GPL-2.0; для маршрута Radxa сохранены атрибуция

@@ -9,7 +9,7 @@
 
 / {
     metadata {
-        title = "Enable AR0234 on Q6A CAM2";
+        title = "Enable AR0234 camera on CAM2";
         compatible = "radxa,dragon-q6a";
         category = "camera";
         exclusive = "cci1_i2c0";

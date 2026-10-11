@@ -1,0 +1,161 @@
+{
+  "verified_on": "2026-10-11",
+  "validation_kind": "Device tree build/apply and graph validation; not physical multi-camera capture",
+  "base_sha256": "647d22e8f8aa5789b65339b7b80412c355a6bfbb6723e2023f6564df55252549",
+  "cases": [
+    {
+      "order": [
+        1
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        2
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        3
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        1,
+        2
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        1,
+        3
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        2,
+        1
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        2,
+        3
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        3,
+        1
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        3,
+        2
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        1,
+        2,
+        3
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        1,
+        3,
+        2
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        2,
+        1,
+        3
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        2,
+        3,
+        1
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        3,
+        1,
+        2
+      ],
+      "graph_valid": true
+    },
+    {
+      "order": [
+        3,
+        2,
+        1
+      ],
+      "graph_valid": true
+    }
+  ],
+  "shared_cma_bytes": 134217728,
+  "kernel": "7.0.11-7-qcom",
+  "commands": [
+    "make overlay overlay-check"
+  ],
+  "physical_capture_verified_ports": [
+    "CAM2"
+  ],
+  "physical_three_camera_capture_verified": false,
+  "source_hashes": {
+    "overlay/ar0234-cam1.dts": "02e76e773f48d854e372ae276d0887cd69233803f6496dc8a2038c66aac4f9cf",
+    "overlay/ar0234-cam2.dts": "d3be8e287c6ca1dc9b7f987d1e793cdda859f5ef612edc7db78ae8168f340256",
+    "overlay/ar0234-cam3.dts": "2287aa4be284085f3e7771d46b671ebcc17cc6ceef6e917e5428d3c0614c0e78"
+  },
+  "dtbo_sha256": {
+    "1": "7cce5487c4ceedfae1c0d781acd0ee3d0114a45c2b0d3679c2c858e9720d09eb",
+    "2": "fd7151c233bff65af36194b0884de3abda61102a336fc708b2581e6bdc3e1be4",
+    "3": "002319bdc5ca3f2963c00fe83d3c483fb6cf284142b5c6473890b9d798c239a1"
+  },
+  "compiler_warnings": [
+    "overlay/ar0234-cam1.dts:54.11-65.7: Warning (graph_child_address): /fragment@2/__overlay__/ports: graph node has single child node 'port@0', #address-cells/#size-cells are not necessary"
+  ],
+  "installed_files": [
+    {
+      "camera_port": "CAM1",
+      "file": "/boot/efi/RadxaOS/7.0.11-7-qcom/dtbo/ar0234-cam1.dtbo",
+      "title": "Enable AR0234 camera on CAM1",
+      "sha256": "7cce5487c4ceedfae1c0d781acd0ee3d0114a45c2b0d3679c2c858e9720d09eb"
+    },
+    {
+      "camera_port": "CAM2",
+      "file": "/boot/efi/RadxaOS/7.0.11-7-qcom/dtbo/ar0234-cam2.dtbo",
+      "title": "Enable AR0234 camera on CAM2",
+      "sha256": "fd7151c233bff65af36194b0884de3abda61102a336fc708b2581e6bdc3e1be4"
+    },
+    {
+      "camera_port": "CAM3",
+      "file": "/boot/efi/RadxaOS/7.0.11-7-qcom/dtbo/ar0234-cam3.dtbo",
+      "title": "Enable AR0234 camera on CAM3",
+      "sha256": "002319bdc5ca3f2963c00fe83d3c483fb6cf284142b5c6473890b9d798c239a1"
+    }
+  ],
+  "cam2_change": "Only metadata/title changed; sorted decompiled DT compared against the installed overlay",
+  "boot_entry_unchanged": true,
+  "cam1_cam3_enabled": false,
+  "preview_continued_running": true
+}
