@@ -11,7 +11,7 @@
 
 | SBC | Материал | Статус |
 | --- | --- | --- |
-| Radxa Dragon Q6A | [Подключение и портирование](../target/sbc/radxa_dragon_q6a/README.md) | Целевая плата; переходник, BSP и захват не проверены |
+| Radxa Dragon Q6A | [Запуск на CAM2](guides/sbc/radxa_dragon_q6a.md), [код и результаты](../target/sbc/radxa_dragon_q6a/README.md) | Физический захват 1920×1200 ≈60 кадров/с; схема переходника не зафиксирована |
 | Raspberry Pi | [Кандидат Kurokesu](../target/sbc/raspberry_pi/README.md) | Разбор закреплённого исходного кода; DECXIN не проверен |
 | NVIDIA Jetson | [Кандидат Kurokesu](../target/sbc/nvidia_jetson/README.md) | Разбор закреплённого исходного кода; DECXIN не проверен |
 
@@ -20,7 +20,7 @@
 [Waveshare ESP32-P4](../target/mcu/waveshare_esp32_p4_wifi6_dev_kit/README.md):
 драйвер, сборка и физический захват не проверены.
 
-Подтверждённых аппаратных инструкций в `docs/guides` пока нет.
+В `docs/guides` опубликован проверенный маршрут Q6A CAM2.
 [Правила оформления результата](development/README.md) отделяют разбор
 источников, сборку и физическую проверку.
 

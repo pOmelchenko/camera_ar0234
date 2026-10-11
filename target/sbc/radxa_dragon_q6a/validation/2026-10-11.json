@@ -1,0 +1,204 @@
+{
+  "verified_on": "2026-10-11",
+  "status": {
+    "source_review": true,
+    "driver_build": true,
+    "driver_install": true,
+    "warm_reboot": true,
+    "physical_capture": true,
+    "gpu_demo": true,
+    "adapter_pinout_verified": false,
+    "cold_power_on": false,
+    "external_trigger": false,
+    "full_resolution_120_fps": false
+  },
+  "hardware": {
+    "board": "Radxa Dragon Q6A",
+    "board_revision": null,
+    "connector": "CAM2 / J16",
+    "module": "ordered color MIPI AR0234",
+    "vendor_module_label": "DECXIN-3478V1",
+    "physical_module_revision": null,
+    "selected_lens_degrees": 200,
+    "cable_model": null,
+    "adapter_pinout": null,
+    "chip_id": "0x0a56",
+    "i2c_address": "0x10",
+    "observed_i2c_bus": 18,
+    "receiver": "CSIPHY2",
+    "lanes": 2,
+    "link_frequency_hz": 450000000,
+    "modeled_module_extclk_hz": 24000000,
+    "extclk_measured": false,
+    "external_trigger_used": false
+  },
+  "software": {
+    "os": "Ubuntu 24.04.5 LTS",
+    "root_storage": "NVMe",
+    "kernel": "7.0.11-7-qcom",
+    "bootloader": "embloader 0.7.r1.f3a03df",
+    "packages": {
+      "device-tree-compiler": "1.7.0-2build1",
+      "libcamera-dev": "0.7.1-1-radxa-3",
+      "libcamera-ipa:arm64": "0.7.1-1-radxa-3",
+      "libcamera-tools": "0.7.1-1-radxa-3",
+      "libdecor-0-plugin-1-cairo:arm64": "0.2.2-1build2",
+      "libgles2-mesa-dev:arm64": "25.2.8-0ubuntu0.24.04.4",
+      "libsdl2-dev:arm64": "2.30.0+dfsg-1ubuntu3.1",
+      "linux-headers-7.0.11-7-qcom": "7.0.11-7",
+      "v4l-utils": "1.26.1-4build3"
+    },
+    "libcamera_runtime": "v0.0.0+1-de1e9bc0-dirty (2026-09-02T10:59:06UTC)",
+    "pipeline": "simple",
+    "tuning": "uncalibrated.yaml",
+    "sensor_helper": false,
+    "gpu": "FD643",
+    "gl": "OpenGL ES 3.2 Mesa 25.2.8-0ubuntu0.24.04.4"
+  },
+  "source_hashes": {
+    "driver": "3f49b79dd0c740c1c47dd0fea80d6ecd94dfa893ebe7dd74acdee935af0437ad",
+    "demo": "9b4b5b92d1176b8644b66426bc1244bf62d12049c755c9eac50adcb0ef3febde",
+    "deployed_overlay": "5426a5c26cd6b5da598f280ea926c344d0112ef7e309e91a8605856331bcdf10",
+    "repository_overlay": "192cc20fe264cb7cc245ff3cfd103ac06fb52b9c60d200c8ed203c1795e40932",
+    "base_dtb": "647d22e8f8aa5789b65339b7b80412c355a6bfbb6723e2023f6564df55252549"
+  },
+  "capture_tests": [
+    {
+      "requested": "1920x1080",
+      "frame_count": 120,
+      "sequence_contiguous": true,
+      "fps": 66.788,
+      "configuration": [
+        "[0:27:34.870396025] [5146]  INFO Camera camera.cpp:1216 configuring streams: (0) 1912x1080-ABGR8888/sRGB",
+        "[0:27:34.870522003] [5149]  INFO SoftwareIsp software_isp.cpp:278 Input 1920x1080-GRBG-10-CSI2P stride 2400"
+      ]
+    },
+    {
+      "requested": "1920x1200",
+      "frame_count": 120,
+      "sequence_contiguous": true,
+      "fps": 60.226,
+      "configuration": [
+        "[0:27:37.113311194] [5158]  INFO Camera camera.cpp:1216 configuring streams: (0) 1912x1200-ABGR8888/sRGB",
+        "[0:27:37.113474199] [5161]  INFO SoftwareIsp software_isp.cpp:278 Input 1920x1200-GRBG-10-CSI2P stride 2400"
+      ]
+    }
+  ],
+  "earlier_720p": {
+    "frame_count": 300,
+    "fps": 66.801,
+    "sequence_contiguous": true,
+    "output": "1280x720 ABGR8888",
+    "new_kernel_errors": []
+  },
+  "live_demo": {
+    "frame_count": 600,
+    "fps": 59.5262,
+    "seconds": 10.3808,
+    "dropped": 7,
+    "errors": 0,
+    "requested": "1920x1200",
+    "output": "1912x1200 XBGR8888",
+    "stride_bytes": 7680,
+    "strength": 1,
+    "drops_meaning": "Frames skipped by preview to display a recent frame"
+  },
+  "gpu_self_tests": [
+    {
+      "test": "SELF_TEST",
+      "noise_rms_ratio": 0.595826,
+      "mean_bias": -0.000985512,
+      "moving_edge_rmse": 0.0423663
+    },
+    {
+      "test": "SHADOW_TEST",
+      "strength": 1,
+      "noise_rms_ratio": 0.163242,
+      "mean_bias": -0.000106899,
+      "dim_line_contrast": 0.942431,
+      "green_excess": 0.00721133,
+      "moving_edge_rmse": 0.0113927
+    },
+    {
+      "test": "SHADOW_TEST",
+      "strength": 2,
+      "noise_rms_ratio": 0.115386,
+      "mean_bias": -0.000253595,
+      "dim_line_contrast": 0.930442,
+      "green_excess": 0.00831699,
+      "moving_edge_rmse": 0.0104929
+    },
+    {
+      "test": "SHADOW_TEST",
+      "strength": 3,
+      "noise_rms_ratio": 0.112583,
+      "mean_bias": -0.000314742,
+      "dim_line_contrast": 0.91685,
+      "green_excess": 0.00960784,
+      "moving_edge_rmse": 0.00990359
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "frame-first.ppm",
+      "bytes": 2764816,
+      "sha256": "432a7415e25cb2c9cc570fca564d7b9bc9952180fb28c03f00b453953540cc17",
+      "availability": "local evidence; not committed or hosted"
+    },
+    {
+      "name": "shadow-demo-color-before-after.ppm",
+      "bytes": 13766417,
+      "sha256": "01f1310a458694a2a90f88e40fa931edc292b16f04dfbc61fc3f6593a4c283ad",
+      "availability": "local evidence; not committed or hosted"
+    },
+    {
+      "name": "rotation-lamps-preview.mp4",
+      "bytes": 7164601,
+      "sha256": "377f8159dd1424aab3451c280f6690151802f0fb7a67252cbab9ffea5af8638b",
+      "availability": "local evidence; not committed or hosted"
+    },
+    {
+      "name": "artifacts/ar0234.ko",
+      "bytes": 38064,
+      "sha256": "2be4c990515f0f96663ad9da29091ced7d02f66eff8f882fa3fd2dfe0763b4db",
+      "availability": "local evidence; not committed or hosted"
+    },
+    {
+      "name": "artifacts/ar0234-cam2.dtbo",
+      "bytes": 3278,
+      "sha256": "3cf4b223b0ca4f9459b19cd98725b6dc7d2e3672688cdc8a92679e4864f68c50",
+      "availability": "local evidence; not committed or hosted"
+    }
+  ],
+  "limitations": [
+    "Exact PCB revision and adapter pinout not recorded",
+    "Generic uncalibrated software ISP; gain/exposure/color calibration not verified",
+    "Fixed RGB outliers observed; RAW defect map and black level calibration not done",
+    "No long-duration capture, cold power-on, external trigger or four-lane test",
+    "Lamp streak origin not isolated between optics and sensor",
+    "Rotation video has dropped frames and accelerated motion; not a timing test"
+  ],
+  "repository_build_test": {
+    "verified_on": "2026-10-11",
+    "kernel": "7.0.11-7-qcom",
+    "commands": [
+      "make driver overlay overlay-check demo check",
+      "make fetch",
+      "sh -n tools/preview.sh tools/preview-original.sh"
+    ],
+    "base_dtb": "User-readable copy of the installed DTB; original EFI file requires root",
+    "driver_build": true,
+    "overlay_build": true,
+    "overlay_apply": true,
+    "merged_sensor_compatible": "onnn,ar0234cs",
+    "merged_sensor_data_lanes": [
+      1,
+      2
+    ],
+    "merged_camss_status": "okay",
+    "gpu_self_test": true,
+    "cached_driver_hash_check": true,
+    "preview_continued_running": true,
+    "compiler_note": "Kernel built with GCC 12.2.0, module built with GCC 13.3.0; Kbuild warns about the version difference"
+  }
+}

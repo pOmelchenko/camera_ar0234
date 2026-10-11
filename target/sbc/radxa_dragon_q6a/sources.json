@@ -1,0 +1,41 @@
+{
+  "recorded_on": "2026-10-11",
+  "driver": {
+    "repository": "Kurokesu/ar0234-rpi-driver",
+    "commit": "eefdf9c42cb8f06f7cf00a18b08c7c23d9363a9f",
+    "license": "GPL-2.0",
+    "modifications": [],
+    "files": [
+      {
+        "path": "ar0234.c",
+        "url": "https://raw.githubusercontent.com/Kurokesu/ar0234-rpi-driver/eefdf9c42cb8f06f7cf00a18b08c7c23d9363a9f/ar0234.c",
+        "sha256": "3f49b79dd0c740c1c47dd0fea80d6ecd94dfa893ebe7dd74acdee935af0437ad"
+      },
+      {
+        "path": "LICENSE",
+        "url": "https://raw.githubusercontent.com/Kurokesu/ar0234-rpi-driver/eefdf9c42cb8f06f7cf00a18b08c7c23d9363a9f/LICENSE",
+        "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+      }
+    ]
+  },
+  "routing_reference": {
+    "repository": "radxa-pkg/radxa-overlays",
+    "commit": "58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077",
+    "path": "arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam2-radxa-camera-8m-219.dtso",
+    "url": "https://raw.githubusercontent.com/radxa-pkg/radxa-overlays/58c42cd3b2ac6efd416cd5ddb6722a8a3a8d4077/arch/arm64/boot/dts/qcom/overlays/qcs6490-radxa-dragon-q6a-cam2-radxa-camera-8m-219.dtso",
+    "sha256": "693f2f9bd7db961a590140735fc7e98c1d9dfb1b4544aceca648ef203f1cb582",
+    "license": "BSD-3-Clause"
+  },
+  "local_files": [
+    {
+      "path": "demo/ar0234-demo.cpp",
+      "sha256": "9b4b5b92d1176b8644b66426bc1244bf62d12049c755c9eac50adcb0ef3febde",
+      "license": "MIT"
+    },
+    {
+      "path": "overlay/ar0234-cam2.dts",
+      "sha256": "192cc20fe264cb7cc245ff3cfd103ac06fb52b9c60d200c8ed203c1795e40932",
+      "license": "GPL-2.0-only"
+    }
+  ]
+}
