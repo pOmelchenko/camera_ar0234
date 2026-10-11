@@ -1,0 +1,139 @@
+{
+  "retrieved_on": "2026-09-23",
+  "scope": "Sensor family, onsemi evaluation hardware, general image-sensor application notes and DevSuite tooling; not DECXIN-3478V1 module specifications",
+  "download_note": "Initial .com overview/schematic requests returned HTTP 403; retained PDFs were downloaded from official onsemi.cn URLs.",
+  "full_register_datasheet_obtained": false,
+  "documents": [
+    {
+      "title": "AR0234CS Product Overview",
+      "file": "onsemi-product-overview.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/parametrics/AR0234CS/create-overview-pdf",
+      "canonical_com_url": "https://www.onsemi.com/parametrics/AR0234CS/create-overview-pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 2,
+      "revision": "Dynamically generated on 2026-09-23; no document revision printed",
+      "bytes": 96826,
+      "sha256": "571d54cdbd6f1699285e776314b437d0df6a187b966480fb3ac34b2e2f56b2c4",
+      "transformation": "none; original downloaded PDF"
+    },
+    {
+      "title": "AR0234-CSP83-Demo3Head",
+      "file": "onsemi-color-evaluation-schematic.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/download/eval-board-schematic/pdf/ar0234cssc00sukah3-gevb_schematic.pdf",
+      "canonical_com_url": "https://www.onsemi.com/download/eval-board-schematic/pdf/ar0234cssc00sukah3-gevb_schematic.pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 6,
+      "revision": "Rev. 1.0; title sheet dated 2020-04-16; individual sheets retain older dates",
+      "bytes": 161842,
+      "sha256": "84e7368cec9bec01814e91840dcd6810f7d1ff3e9e0546d2f56e90c810807045",
+      "transformation": "none; original downloaded PDF",
+      "verified_identical_aliases": [
+        {
+          "source_url": "https://www.onsemi.cn/download/eval-board-schematic/pdf/ar0234cssc28sukah3-gevb_schematic.pdf",
+          "canonical_com_url": "https://www.onsemi.com/download/eval-board-schematic/pdf/ar0234cssc28sukah3-gevb_schematic.pdf",
+          "retrieved_on": "2026-09-23",
+          "bytes": 161842,
+          "sha256": "84e7368cec9bec01814e91840dcd6810f7d1ff3e9e0546d2f56e90c810807045"
+        }
+      ]
+    },
+    {
+      "title": "AN52561/D: Image Sensor Handling and Best Practices",
+      "file": "onsemi-image-sensor-handling.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/download/application-notes/pdf/an52561-d.pdf",
+      "canonical_com_url": "https://www.onsemi.com/download/application-notes/pdf/an52561-d.pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 8,
+      "revision": "Rev. 11, June 2019; branding cover added",
+      "bytes": 224717,
+      "sha256": "a59d292b045dac064c93b292a9eb18c490823d62c2fe0bbde2100cc276fc8082",
+      "transformation": "none; original downloaded PDF"
+    },
+    {
+      "title": "TND6115/D: Image Sensor ISO Measurement",
+      "file": "onsemi-iso-measurement.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/download/application-notes/pdf/tnd6115-d.pdf",
+      "canonical_com_url": "https://www.onsemi.com/download/application-notes/pdf/tnd6115-d.pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 3,
+      "revision": "Rev. 2, July 2014; branding cover added",
+      "bytes": 139813,
+      "sha256": "e41ab15d4f6021b23c7f30358f0363f382b2637d8057e8d7e959233733434a55",
+      "transformation": "none; original downloaded PDF"
+    },
+    {
+      "title": "570CK: ODCSP83 Mechanical Case Outline",
+      "file": "onsemi-package-570ck.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/download/package-drawing/pdf/570ck.pdf",
+      "canonical_com_url": "https://www.onsemi.com/download/package-drawing/pdf/570ck.pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 1,
+      "revision": "Issue A, 2019-08-16; document 98AON87372G",
+      "bytes": 190930,
+      "sha256": "9b5590819c6f87268f6f06f5b25df04bb462da8b37eb2aba6914acc2d88eb676",
+      "transformation": "none; original downloaded PDF"
+    },
+    {
+      "title": "AR0234-CSP83_Demo3Head Bill of Materials",
+      "file": "onsemi-color-evaluation-bom.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/download/eval-board-bom/pdf/ar0234cssc00sukah3-gevb_bom_rohs.pdf",
+      "canonical_com_url": "https://www.onsemi.com/download/eval-board-bom/pdf/ar0234cssc00sukah3-gevb_bom_rohs.pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 1,
+      "revision": "Rev. 1.0, 2018-09-03",
+      "bytes": 461220,
+      "sha256": "ca498ee8b0a65780196239bd91e22e74549ee0b245cccc702ffa72e8757e57fb",
+      "transformation": "none; original downloaded PDF"
+    },
+    {
+      "title": "DevSuite Demo Kit Quick-Start Guide",
+      "file": "devsuite-quick-start-guide.pdf",
+      "publisher": "onsemi",
+      "source_url": "https://www.onsemi.cn/download/software/pdf/devsuite_quickstartguide.pdf",
+      "canonical_com_url": "https://www.onsemi.com/download/software/pdf/devsuite_quickstartguide.pdf",
+      "retrieved_on": "2026-09-23",
+      "pages": 13,
+      "revision": "Rev. 72; copyright 2024",
+      "bytes": 621858,
+      "sha256": "5979c66a018e7220829961fe61518cd0e657da299bd81301272c809671c33ce8",
+      "transformation": "none; original downloaded PDF"
+    }
+  ],
+  "page_reviews": [
+    {
+      "url": "https://www.onsemi.com/products/sensors/image-sensors/ar0234cs#technical-documentation",
+      "reviewed_on": "2026-09-23",
+      "method": "Browser Control rendered content; cross-checked public onsemi.cn page fragment",
+      "public_fragment_url": "https://www.onsemi.cn/products/fragment/AR0234CS/technical-documentation-tab",
+      "listed_document_count": 15,
+      "categories": {
+        "Reference Manuals": 1,
+        "Eval Board: Schematic": 4,
+        "White Papers": 1,
+        "Package Drawings": 1,
+        "Application Notes": 2,
+        "System Solution Guide": 2,
+        "Eval Board: BOM": 4
+      },
+      "listed_but_not_retrieved": [
+        "TND6370/D",
+        "TND310/D",
+        "SSG8210/D",
+        "SSG8213/D"
+      ],
+      "access_note": "TND6370/D and the two solution guides have data-gate-level=1 and no direct public PDF link in the page fragment. Their content and access terms were not reviewed."
+    },
+    {
+      "url": "https://www.onsemi.com/products/sensors/image-sensors/ar0234cs#design-tools",
+      "reviewed_on": "2026-09-23",
+      "method": "Browser Control rendered content",
+      "finding": "Six interactive application block diagrams; no driver download in the inspected tab."
+    }
+  ]
+}

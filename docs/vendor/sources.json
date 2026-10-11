@@ -1,0 +1,106 @@
+{
+  "provided_on": "2026-09-23",
+  "source_channel": "owner conversation attachments and pasted text",
+  "landing_page": "https://aliexpress.ru/item/1005013091606071.html?sku_id=12000060249246221",
+  "item_id": "1005013091606071",
+  "sku_id": "12000060249246221",
+  "pictured_module_marking": "DECXIN-3478V1",
+  "ordered_variant": {
+    "sensor_color": "color",
+    "lens_option": "200 degrees",
+    "evidence": "owner clarification and follow-up image labelled 200 degrees panoramic lens on 2026-09-23; SKU mapping not independently retrieved",
+    "angle_convention": null
+  },
+  "live_listing_retrieved": false,
+  "input_image_count": 7,
+  "unique_image_count": 6,
+  "documents": [
+    {
+      "title": "Product introduction",
+      "file": "product-introduction.png",
+      "source_kind": "owner-provided seller image",
+      "original_filenames": [
+        "pasted-image-2.png"
+      ],
+      "bytes": 476904,
+      "width": 750,
+      "height": 922,
+      "sha256": "24145d0d95b4f2ae2c85a6b1d1dfa99d0baaeeacc2f55975ebeebb767f8085bf",
+      "transformation": "none; byte-identical duplicates stored once"
+    },
+    {
+      "title": "Parameters, dimensions and pinout",
+      "file": "dimensions-and-pinout.png",
+      "source_kind": "owner-provided seller image",
+      "original_filenames": [
+        "pasted-image-10.png",
+        "pasted-image-6.png"
+      ],
+      "bytes": 264731,
+      "width": 750,
+      "height": 1133,
+      "sha256": "409dfdb11f7039873f07c3cfb0ae41ca04f4eca330de5eb9d86b4d6a23e55ca8",
+      "transformation": "none; byte-identical duplicates stored once"
+    },
+    {
+      "title": "Lens option examples",
+      "file": "lens-options.png",
+      "source_kind": "owner-provided seller image",
+      "original_filenames": [
+        "pasted-image-5.png"
+      ],
+      "bytes": 509321,
+      "width": 750,
+      "height": 1361,
+      "sha256": "01c03ff211789d749c2f023ee19391cff68067b657d0fabb25c684994fbd0141",
+      "transformation": "none; byte-identical duplicates stored once"
+    },
+    {
+      "title": "Module front photograph",
+      "file": "module-front.png",
+      "source_kind": "owner-provided seller image",
+      "original_filenames": [
+        "pasted-image-4.png"
+      ],
+      "bytes": 942520,
+      "width": 1440,
+      "height": 1440,
+      "sha256": "8ebe20662e2eb6fc5938c101cce37297f8f6e0e43c4f54e0c641b1b5647ac890",
+      "transformation": "none; byte-identical duplicates stored once"
+    },
+    {
+      "title": "Module rear photograph",
+      "file": "module-back.png",
+      "source_kind": "owner-provided seller image",
+      "original_filenames": [
+        "pasted-image-3.png"
+      ],
+      "bytes": 747980,
+      "width": 1440,
+      "height": 1440,
+      "sha256": "3df4491f13d23fd797ab7970f4bd6b58f8f660820681b81a2ee4dc96b3ce1236",
+      "transformation": "none; byte-identical duplicates stored once"
+    },
+    {
+      "title": "Ordered 200-degree panoramic lens option",
+      "file": "ordered-200-degree-lens.png",
+      "source_kind": "owner-provided product image",
+      "original_filenames": [
+        "pasted-image-2519.png"
+      ],
+      "bytes": 270707,
+      "width": 640,
+      "height": 640,
+      "sha256": "865255a63b5d16941ec3b262afed56b733eda207d0e5da6133e7cfbc98c04268",
+      "transformation": "none"
+    },
+    {
+      "title": "Owner-pasted AliExpress description",
+      "file": "aliexpress-description.md",
+      "source_kind": "owner-provided seller text",
+      "bytes": 3447,
+      "sha256": "ba5dfcc80a3fde28ef0792c3f9a019a487665943a7d0f44e69524066924d3dd8",
+      "transformation": "verbatim supplied paragraph under a provenance header"
+    }
+  ]
+}

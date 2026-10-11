@@ -1,0 +1,97 @@
+{
+  "reviewed_on": "2026-09-23",
+  "scope": "AR0234 public source candidates; no demonstrated DECXIN-3478V1 compatibility",
+  "validation": {
+    "source_review": true,
+    "driver_build": false,
+    "driver_install": false,
+    "physical_capture": false
+  },
+  "implementations": [
+    {
+      "repository": "Kurokesu/ar0234-rpi-driver",
+      "url": "https://github.com/Kurokesu/ar0234-rpi-driver",
+      "commit": "eefdf9c42cb8f06f7cf00a18b08c7c23d9363a9f",
+      "committed_at": "2026-09-01T14:22:18+03:00",
+      "review_kind": "README and selected source/configuration declarations; static inspection only",
+      "source_files": [
+        {
+          "path": "README.md",
+          "sha256": "f7feac7b0febacca46fdf0dafb845441afa94020902f06e5ff8fae66a34c2d4d"
+        },
+        {
+          "path": "ar0234.c",
+          "sha256": "3f49b79dd0c740c1c47dd0fea80d6ecd94dfa893ebe7dd74acdee935af0437ad"
+        },
+        {
+          "path": "ar0234-overlay.dts",
+          "sha256": "382d9bf0a6f7ec2ff252616a69b49e565d77a3f2a86f854ac892fcb4a0d26265"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        }
+      ]
+    },
+    {
+      "repository": "Kurokesu/ar0234-jetson-driver",
+      "url": "https://github.com/Kurokesu/ar0234-jetson-driver",
+      "commit": "9b71e90d2dbc8ad41332f8ffad0bae973583ddd3",
+      "committed_at": "2026-08-04T22:20:35+03:00",
+      "review_kind": "README and selected source/configuration declarations; static inspection only",
+      "source_files": [
+        {
+          "path": "README.md",
+          "sha256": "4258fc6fbd7b63fdacf82c5bc9d1657d01e685e52be4efda8aca314cc2c5ca1f"
+        },
+        {
+          "path": "nv_ar0234.c",
+          "sha256": "9dfbd937d054761ac954c7a388e5514642023137ca069dcc454b4c68d5130aeb"
+        },
+        {
+          "path": "ar0234_mode_tbls.h",
+          "sha256": "009707c0d7424dda145d8379f376f55c29189d7dba429e9e427aa9d85ee8729c"
+        },
+        {
+          "path": "LICENSE",
+          "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643"
+        }
+      ]
+    }
+  ],
+  "directory_inventories": [
+    {
+      "repo": "torvalds/linux",
+      "branch": "master",
+      "path": "drivers/media/i2c",
+      "commit": "fe2ec83746e501645709761605c2464a44fd2929",
+      "committed_at": "2026-09-22T17:30:17Z",
+      "entries": 196,
+      "matching_names": [],
+      "query": "case-insensitive ar0234 in immediate entry names",
+      "evidence_url": "https://github.com/torvalds/linux/tree/fe2ec83746e501645709761605c2464a44fd2929/drivers/media/i2c"
+    },
+    {
+      "repo": "raspberrypi/linux",
+      "branch": "rpi-6.18.y",
+      "path": "drivers/media/i2c",
+      "commit": "eefdef723a09236ba924f2f94358398f5bc92394",
+      "committed_at": "2026-09-23T14:03:15Z",
+      "entries": 200,
+      "matching_names": [],
+      "query": "case-insensitive ar0234 in immediate entry names",
+      "evidence_url": "https://github.com/raspberrypi/linux/tree/eefdef723a09236ba924f2f94358398f5bc92394/drivers/media/i2c"
+    },
+    {
+      "repo": "espressif/esp-video-components",
+      "branch": "master",
+      "path": "esp_cam_sensor/sensors",
+      "commit": "dbbdcbd5e25bdb6561d3f7fd0c5149641ba5536f",
+      "committed_at": "2026-09-23T02:34:31Z",
+      "entries": 40,
+      "matching_names": [],
+      "query": "case-insensitive ar0234 in immediate entry names",
+      "evidence_url": "https://github.com/espressif/esp-video-components/tree/dbbdcbd5e25bdb6561d3f7fd0c5149641ba5536f/esp_cam_sensor/sensors"
+    }
+  ]
+}

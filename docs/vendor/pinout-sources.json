@@ -1,0 +1,24 @@
+{
+  "retrieved_on": "2026-10-11",
+  "physical_pinout_verified": false,
+  "documents": [
+    {
+      "file": "raspberry-pi-camera-advanced-2026-10-11.adoc",
+      "publisher": "Raspberry Pi Ltd",
+      "title": "Camera advanced information: pinout information",
+      "source_url": "https://raw.githubusercontent.com/raspberrypi/documentation/62ba0a0c2dd5030fe9b19458fa9bd174a451f79b/documentation/asciidoc/accessories/camera/advanced.adoc",
+      "resolved_url": "https://raw.githubusercontent.com/raspberrypi/documentation/62ba0a0c2dd5030fe9b19458fa9bd174a451f79b/documentation/asciidoc/accessories/camera/advanced.adoc",
+      "retrieved_on": "2026-10-11",
+      "bytes": 6075,
+      "sha256": "f0586004c12983ae20164de2dead3ecd3cc414771ddda0cf445d60c844cb5758",
+      "transformation": "none; original response body bytes",
+      "scope": "Official standard 15/22-pin host assignments and host-side I2C/control voltage; does not establish DECXIN physical numbering or adapter wiring.",
+      "source_kind": "official documentation source",
+      "revision": "Git commit 62ba0a0c2dd5030fe9b19458fa9bd174a451f79b",
+      "rendered_page_url": "https://www.raspberrypi.com/documentation/accessories/camera.html#pinout-information",
+      "license": "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "license_url": "https://github.com/raspberrypi/documentation/blob/62ba0a0c2dd5030fe9b19458fa9bd174a451f79b/LICENSE.md",
+      "retrieval_note": "Rendered page read through web tool; direct curl returned HTTP 403, so the original official source was retained at a pinned commit."
+    }
+  ]
+}
