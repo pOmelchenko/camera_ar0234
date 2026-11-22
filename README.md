@@ -7,17 +7,10 @@
 
 ## Установка на Radxa Dragon Q6A
 
-Из корня репозитория на Mac или Linux выполните:
-
-```sh
-sh target/sbc/radxa_dragon_q6a/deploy.sh radxa@radxa-dragon-q6a.local cam2
-```
-
-На самой плате можно запустить `sudo python3 install.py --port cam2` из
-`target/sbc/radxa_dragon_q6a`. При замене камеры установщик запросит подтверждение.
-После обычной перезагрузки команда `python3 capture.py --port cam2` в каталоге
-комплекта запишет RAW10 и цветное превью. При доставке по SSH каталог на плате —
-`~/q6a-ar0234`. [Порядок установки и проверки](docs/guides/sbc/radxa_dragon_q6a.md).
+Для CAM2/J16 доступны [проверенная ручная установка и захват через libcamera](docs/guides/sbc/radxa_dragon_q6a.md).
+Для автоматической установки по SSH или с самой платы и прямого захвата RAW10
+подготовлена [процедура проверки на Q6A](docs/development/q6a-installer-capture.md).
+Этот маршрут ожидает первого аппаратного прогона.
 
 ## Камера
 
