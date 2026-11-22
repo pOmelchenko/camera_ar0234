@@ -10,3 +10,5 @@ target/**/vendor/
 artifacts/
 runs/
 .work/
+**/ar0234-*/frame.raw
+**/ar0234-*/preview.ppm
